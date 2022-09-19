@@ -804,7 +804,7 @@ describe('Marked renderer', () => {
         slug: 'foo'
       });
       const postasset = await PostAsset.insert({
-        _id: `source/_posts/foo/${asset}`,
+        _id: `source/_posts/${asset}`,
         slug,
         post: post._id
       });
@@ -830,7 +830,7 @@ describe('Marked renderer', () => {
         slug: 'foo'
       });
       const postasset = await PostAsset.insert({
-        _id: `source/_posts/foo/${asset}`,
+        _id: `source/_posts/${asset}`,
         slug: asset,
         post: post._id
       });
@@ -856,7 +856,7 @@ describe('Marked renderer', () => {
         slug: 'foo'
       });
       const postasset = await PostAsset.insert({
-        _id: `source/_posts/lorem/foo/${asset}`,
+        _id: `source/_posts/lorem/${asset}`,
         slug,
         post: post._id
       });
